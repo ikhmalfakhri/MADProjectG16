@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2CEDA"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/buttonInfo3"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/buttonInfo2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/futur"
+        android:text="MENSTRUAL PHASES"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:theme="@style/Pink3.Theme.MyTEST" />
+
+    <Button
+        android:id="@+id/buttonInfo4"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/buttonInfo3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/futur"
+        android:text="MENSTRUAL HYGIENE TIPS"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:theme="@style/Pink4.Theme.MyTEST" />
+
+    <Button
+        android:id="@+id/buttonInfo1"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/futur"
+        android:text="WHAT IS MENSTRUAL CYCLES"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:theme="@style/Pink2.Theme.MyTEST" />
+
+    <Button
+        android:id="@+id/buttonInfo2"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/buttonInfo1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/futur"
+        android:text="FOODS TO EAT IN EACH PHASE"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:theme="@style/Pink.Theme.MyTEST" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="214dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/femmecyclelogo"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="94dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="300dp"
+        android:src="@drawable/femmecycle__3__removebg_preview" />
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="94dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="300dp"
+        android:src="@drawable/femmecycle__3__removebg_preview" />
+    <ImageView
+        android:id="@+id/icon3"
+        android:layout_width="94dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginLeft="300dp"
+        android:src="@drawable/femmecycle__3__removebg_preview" />
+    <ImageView
+        android:id="@+id/icon4"
+        android:layout_width="94dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginLeft="300dp"
+        android:src="@drawable/femmecycle__3__removebg_preview" />
+
+    <TextView
+        android:id="@+id/userDisplay"
+        android:layout_width="137dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/futur"
+        android:gravity="center"
+        android:text="Welcome, User"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

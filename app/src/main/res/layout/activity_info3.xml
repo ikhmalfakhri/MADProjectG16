@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/femmecycleinfo3"
+    tools:context=".Info3">
+
+
+    <Button
+        android:id="@+id/buttonMenu2"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#D43B59"
+        android:outlineProvider="paddedBounds"
+        android:textColor="#1E1E1E"
+        app:icon="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

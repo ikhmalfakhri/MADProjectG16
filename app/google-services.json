@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "969566307331",
+    "firebase_url": "https://femmecycle-6defc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "femmecycle-6defc",
+    "storage_bucket": "femmecycle-6defc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969566307331:android:0eb6afb13f75ffb7c6fa36",
+        "android_client_info": {
+          "package_name": "com.example.femmecycle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv4wtqEKQISo-OUkVLC19LPSvIQBVlvgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969566307331:android:e17a8b821431015fc6fa36",
+        "android_client_info": {
+          "package_name": "com.example.femmecyclemad"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv4wtqEKQISo-OUkVLC19LPSvIQBVlvgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/femmecycle__4_"
+    tools:context=".Quiz1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/questionText"
+        android:text="What is the average length of a menstrual cycle?"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="18 DAYS"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/ans1"
+        android:onClick="ClickChoose"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/pink"
+        app:cornerRadius = "20dp"/>
+
+    <Button
+        android:id="@+id/ans2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="30dp"
+        android:textStyle="bold"
+        android:onClick="ClickChoose"
+        android:backgroundTint="@color/pink"
+        android:text="28 DAYS"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="20 DAYS"
+        android:onClick="ClickChoose"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/ans3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="390dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/pink"
+        app:cornerRadius = "20dp"/>
+
+    <TextView
+        android:id="@+id/cpt_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginEnd="16dp"
+        android:text="1/5"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="NEXT"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:id="@+id/next"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="490dp"
+        android:textColor="@color/grey"
+        android:backgroundTint="@color/pink"
+        app:cornerRadius = "20dp"/>
+
+
+</RelativeLayout>

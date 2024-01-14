@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/femmecycleinfo2"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonMenu3"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#D43B59"
+        android:outlineProvider="paddedBounds"
+        android:textColor="#1E1E1E"
+        app:icon="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textFood"
+        android:layout_width="388dp"
+        android:layout_height="286dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/futur"
+        android:text="@string/Info2MP"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titlePhase"
+        android:layout_width="152dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/circle"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text=": Menstrual Phase"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/textFood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numberpicker1" />
+
+    <TextView
+        android:id="@+id/title1Txt2"
+        android:layout_width="73dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/circle"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Day "
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/textFood"
+        app:layout_constraintEnd_toStartOf="@+id/numberpicker1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/numberpicker1"
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/textFood"
+        app:layout_constraintEnd_toStartOf="@+id/titlePhase"
+        app:layout_constraintStart_toEndOf="@+id/title1Txt2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
