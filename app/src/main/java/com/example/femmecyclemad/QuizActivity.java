@@ -15,16 +15,28 @@ public class QuizActivity extends AppCompatActivity {
             "What is the third phase in the Menstrual cycle?"
             ,"What is the primary purpose of practicing good menstrual hygiene?",
             "What is the purpose of menstrual hygiene education?",
-            "Which of the following practices is essential for maintaining proper menstrual hygiene?"
+            "Which of the following practices is essential for maintaining proper menstrual hygiene?",
+            "What is the primary goal of women empowerment?",
+            "Which term refers to the belief that both men and women should have equal rights and opportunities?",
+            "What is the gender pay gap?",
+            "What does the term \"glass ceiling\" represent in the context of gender equality?",
+            "Which international day is dedicated to promoting gender equality and women's rights?"
 
     };
     String[] choose_list = {"13","17","24","28",
             "Menstrual","Luteal","Ovulation","Follicular",
             "To regulate the menstrual cycle", "To prevent pregnancy" ,"To maintain reproductive health", "To reduce the risk of infections",
             "To promote excessive product use","To raise awareness about menstrual health and hygiene","To encourage the suppression of menstrual cycles","To endorse a one-size-fits-all approach to menstrual products",
-            "Flushing used menstrual products down the toilet","Changing menstrual products only once a day","Washing hands before and after handling menstrual products","Sharing menstrual products with friends"
+            "Flushing used menstrual products down the toilet","Changing menstrual products only once a day","Washing hands before and after handling menstrual products","Sharing menstrual products with friends",
+            "Dominating men","Achieving equality and autonomy for women","Supress men's rights","Taking over the world",
+            "Gender bias","Feminism","Misogyny","Racism",
+            "Number of women in the workforce","Men and women earning disparity","Policy promoting equal pay","Women wanting more money",
+            "A transparent roof in workplaces","A feminist organization","Barrier limiting women's advancements","A male organization",
+            "International Women's Day","Mother's Day","Valentine's day","Labour day"
+
+
     };
-    String[] correct_list = {"28","Ovulation","To maintain reproductive health","To raise awareness about menstrual health and hygiene","Washing hands before and after handling menstrual products"};
+    String[] correct_list = {"28","Ovulation","To maintain reproductive health","To raise awareness about menstrual health and hygiene","Washing hands before and after handling menstrual products","Achieving equality and autonomy for women","Feminism","Men and women earning disparity","Barrier limiting women's advancements","International Women's Day"};
 
 
     TextView cpt_question , text_question;

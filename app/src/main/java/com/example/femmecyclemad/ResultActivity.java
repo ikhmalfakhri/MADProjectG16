@@ -22,7 +22,7 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
         textView = findViewById(R.id.textView);
         int score = getIntent().getIntExtra("Resute",0);
-        textView.setText("Your Score : " + score+"/5");
+        textView.setText("Your Score : " + score+"/10");
 
         database = FirebaseDatabase.getInstance();
         reference = database.getReference("user");
