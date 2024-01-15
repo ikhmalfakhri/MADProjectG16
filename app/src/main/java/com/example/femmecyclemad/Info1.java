@@ -23,10 +23,24 @@ public class Info1 extends AppCompatActivity {
 
             }
         });
+
+        button2 = (Button) findViewById(R.id.buttonNext);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openInfo3();
+            }
+        });
     }
 
     public void openMenu(){
         Intent intent = new Intent(this, HomeFragment.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+
+    public void openInfo3(){
+        Intent intent = new Intent(Info1.this, Info3.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }

@@ -1,6 +1,7 @@
 package com.example.femmecyclemad;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,7 +15,7 @@ public class Info2 extends AppCompatActivity {
     TextView textView, textView2;
     NumberPicker numberPicker;
 
-    private Button button1;
+    private Button button1,button2;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -31,6 +32,7 @@ public class Info2 extends AppCompatActivity {
 
 
         });
+        
 
         numberPicker = findViewById(R.id.numberpicker1);
         textView = findViewById(R.id.titlePhase);
@@ -100,6 +102,18 @@ public class Info2 extends AppCompatActivity {
             }
 
         });
+    }
+
+    public void openMenu(){
+        Intent intent = new Intent(this, HomeFragment.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+
+    public void openInfo4(){
+        Intent intent = new Intent(this, Info4.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 
 

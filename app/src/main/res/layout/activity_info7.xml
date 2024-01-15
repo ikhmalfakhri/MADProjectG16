@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/femmecycleinfo1"
-    tools:context=".Info1">
-
+    android:background="@drawable/femmecycle__7_"
+    tools:context=".Info7">
 
     <Button
-        android:id="@+id/buttonMenu"
+        android:id="@+id/buttonMenu3"
         android:layout_width="57dp"
         android:layout_height="47dp"
         android:layout_marginStart="24dp"
@@ -24,9 +23,9 @@
 
     <Button
         android:id="@+id/buttonNext"
-        android:layout_width="83dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="312dp"
+        android:layout_width="91dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="304dp"
         android:backgroundTint="#D43B59"
         android:outlineProvider="paddedBounds"
         android:text="Next"
@@ -34,6 +33,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.995" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

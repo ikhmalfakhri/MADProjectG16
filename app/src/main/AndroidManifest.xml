@@ -12,7 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FemmeCycleMAD"
         tools:targetApi="31">
-
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Info8"
+            android:exported="false" />
+        <activity
+            android:name=".Info7"
+            android:exported="false" />
+        <activity
+            android:name=".Info6"
+            android:exported="false" />
+        <activity
+            android:name=".Info5"
+            android:exported="false" />
         <activity
             android:name=".ResultActivity"
             android:exported="false" />

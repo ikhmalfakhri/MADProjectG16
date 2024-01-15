@@ -3,11 +3,13 @@ package com.example.femmecyclemad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
@@ -15,11 +17,13 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class EditProfile extends AppCompatActivity {
 
-    EditText editName, editEmail, editUsername, editPassword;
+    EditText editGender, editEmail, editUsername, editPassword;
     Button saveButton;
-    String nameUser, emailUser, usernameUser, passwordUser;
+    String genderUser, emailUser, usernameUser, passwordUser;
     DatabaseReference reference;
+    Spinner spinner;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,18 +31,19 @@ public class EditProfile extends AppCompatActivity {
 
         reference = FirebaseDatabase.getInstance().getReference("users");
 
-        editName = findViewById(R.id.editName);
+        editGender= findViewById(R.id.editGender);
         editEmail = findViewById(R.id.editEmail);
-        editUsername = findViewById(R.id.editUsername);
+        editUsername = findViewById(R.id.editName);
         editPassword = findViewById(R.id.editPassword);
         saveButton = findViewById(R.id.saveButton);
+
 
         showData();
 
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (isNameChanged() || isPasswordChanged() || isEmailChanged()){
+                if (isGenderChanged() || isPasswordChanged() || isEmailChanged()){
                     Toast.makeText(EditProfile.this, "Saved", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(EditProfile.this, "No Changes Found", Toast.LENGTH_SHORT).show();
@@ -47,10 +52,10 @@ public class EditProfile extends AppCompatActivity {
         });
     }
 
-    private boolean isNameChanged() {
-        if (!nameUser.equals(editName.getText().toString())){
-            reference.child(usernameUser).child("name").setValue(editName.getText().toString());
-            nameUser = editName.getText().toString();
+    private boolean isGenderChanged() {
+        if (!genderUser.equals(editGender.getText().toString())){
+            reference.child(usernameUser).child("name").setValue(editGender.getText().toString());
+            genderUser = editGender.getText().toString();
             return true;
         } else {
             return false;
@@ -82,12 +87,12 @@ public class EditProfile extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        nameUser = intent.getStringExtra("name");
+        genderUser = intent.getStringExtra("gender");
         emailUser = intent.getStringExtra("email");
-        usernameUser = intent.getStringExtra("username");
+        usernameUser = intent.getStringExtra("name");
         passwordUser = intent.getStringExtra("password");
 
-        editName.setText(nameUser);
+        editGender.setText(genderUser);
         editEmail.setText(emailUser);
         editUsername.setText(usernameUser);
         editPassword.setText(passwordUser);

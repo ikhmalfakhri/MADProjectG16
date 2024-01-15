@@ -10,10 +10,10 @@
 
     <Button
         android:id="@+id/logout_button"
-        android:layout_width="291dp"
-        android:layout_height="45dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_width="190dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="90dp"
         android:backgroundTint="@color/pink"
         android:text="Log Out"
         android:textColor="@color/grey"
@@ -21,9 +21,10 @@
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.058"
+        app:layout_constraintVertical_bias="0.054"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -60,7 +61,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
-        android:background="@drawable/rounded_corner_darkpink"
+        android:background="@drawable/rounded_corner_pink1"
         android:elevation="20dp"
         android:orientation="vertical"
         android:padding="10dp"

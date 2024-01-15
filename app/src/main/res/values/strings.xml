@@ -4,5 +4,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Info1">The menstrual cycle is a natural, recurring process that occurs in the bodies of individuals with female reproductive systems.\n\nTypically lasting around 28 days, though it can vary, the menstrual cycle involves a series of hormonal and physiological changes designed to prepare the body for potential pregnancy.\n\nThe cycle is divided into several phases, including Menstruation, Follicular, Ovulation, and Luteal phases.\n\nMenstruation marks the shedding of the uterine lining, while the follicular phase sees the development of a new egg.\n\nOvulation is the release of the mature egg, and the luteal phase prepares the uterus for a potential fertilized egg.\n\n</string>
     <string name="Info2MP">Iron-rich Foods:\n\nLean meats (chicken, turkey)\nFish (especially salmon and tuna)\nLentils and beans\nLeafy green vegetables (spinach, kale)\n\nHydration:\n\nDrink plenty of water to stay hydrated, which can help alleviate bloating.</string>
-
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 </resources>

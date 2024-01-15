@@ -7,8 +7,10 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +24,7 @@ public class SignUpActivity extends AppCompatActivity {
     Button signupButton;
     FirebaseDatabase database;
     DatabaseReference reference;
+    Spinner spinner;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -29,9 +32,19 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+        String[] arraySpinner = new String[] {
+                "Male","Female"
+        };
+
+        spinner = findViewById(R.id.signup_gender);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,arraySpinner);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+
         signupName = findViewById(R.id.signup_name);
         signupEmail = findViewById(R.id.signup_email);
-        signupGender = findViewById(R.id.signup_gender);
+       //signupGender = findViewById(R.id.signup_gender);
         signupPassword = findViewById(R.id.signup_password);
         loginRedirectText = findViewById(R.id.loginRedirectText);
         signupButton = findViewById(R.id.signup_button);
@@ -45,7 +58,7 @@ public class SignUpActivity extends AppCompatActivity {
 
                 String name = signupName.getText().toString();
                 String email = signupEmail.getText().toString();
-                String gender = signupGender.getText().toString();
+                String gender = spinner.getSelectedItem().toString();
                 String password = signupPassword.getText().toString();
 
                 HelperClass helperClass = new HelperClass(name, email, gender, password);

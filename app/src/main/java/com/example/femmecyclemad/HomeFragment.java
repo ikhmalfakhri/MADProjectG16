@@ -49,7 +49,7 @@ public class HomeFragment extends Fragment {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openInfo2();
+                openInfo5();
             }
         });
 
@@ -57,7 +57,7 @@ public class HomeFragment extends Fragment {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openInfo3();
+                openInfo7();
             }
         });
 
@@ -89,18 +89,18 @@ public class HomeFragment extends Fragment {
         startActivity(intent);
     }
 
-    public void openInfo3(){
-        Intent intent = new Intent(HomeFragment.this.getActivity(), Info3.class);
+    public void openInfo7(){
+        Intent intent = new Intent(HomeFragment.this.getActivity(), Info7.class);
         startActivity(intent);
     }
 
-    public void openInfo2(){
-        Intent intent = new Intent(HomeFragment.this.getActivity(), Info2.class);
+    public void openInfo5(){
+        Intent intent = new Intent(HomeFragment.this.getActivity(), Info5.class);
         startActivity(intent);
     }
 
     public void openInfo4(){
-        Intent intent = new Intent(HomeFragment.this.getActivity(), Info4.class);
+        Intent intent = new Intent(HomeFragment.this.getActivity(), FeedbackActivity.class);
         startActivity(intent);
     }
 

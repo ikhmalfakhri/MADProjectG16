@@ -104,7 +104,7 @@ public class LoginActivity extends AppCompatActivity {
                         String emailFromDB = snapshot.child(userUsername).child("email").getValue(String.class);
                         String genderFromDB = snapshot.child(userUsername).child("gender").getValue(String.class);
 
-                        Intent intentQ = new Intent(LoginActivity.this, QuizActivity.class);
+                        Intent intentQ = new Intent(LoginActivity.this, ResultActivity.class);
 
                         intentQ.putExtra("name", nameFromDB);
 

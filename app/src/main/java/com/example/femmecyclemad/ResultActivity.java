@@ -7,8 +7,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class ResultActivity extends AppCompatActivity {
 
+    FirebaseDatabase database;
+    DatabaseReference reference;
     TextView textView ;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -18,6 +23,11 @@ public class ResultActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
         int score = getIntent().getIntExtra("Resute",0);
         textView.setText("Your Score : " + score+"/5");
+
+        database = FirebaseDatabase.getInstance();
+        reference = database.getReference("user");
+
+
 
         findViewById(R.id.btn_restart).setOnClickListener(
                 restart->{
