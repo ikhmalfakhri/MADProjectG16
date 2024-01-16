@@ -45,7 +45,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
                 android:padding="8dp"
-                android:text="Take a short quiz to test your knowledge on the subject of menstrual cycle, hygiene and phases."
+                android:text="Take a short quiz to test your knowledge on the subject of gender equality, empowerment, and menstrual cycle."
                 android:textColor="@color/grey"
                 android:textSize="13sp"
                 android:textStyle="bold" />
